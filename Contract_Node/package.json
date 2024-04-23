@@ -1,5 +1,5 @@
 {
-  "name": "contract_node",
+  "name": "nft",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@openzeppelin/contracts": "^4.0.0",
     "axios": "^1.6.8",
     "dotenv": "^16.4.5",

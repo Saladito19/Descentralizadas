@@ -3,7 +3,7 @@ async function main(){
     const nft2024 = await NFT2024.deploy()
     const txHash = nft2024.deployTransaction.hash;
     const txReceipt = await ethers.provider.waitForTransaction(txHash);
-    console.lof("Contract deployed to Address",txReceipt.contractAddress);
+    console.log("Contract deployed to Address",txReceipt.contractAddress);
 }
 
 main().then(()=>{process.exit(0)}).catch((error)=>{

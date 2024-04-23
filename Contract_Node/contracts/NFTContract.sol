@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract NFTClase is ERC721,Ownable {
+contract NFT2024 is ERC721,Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
     using Strings for uint256;
