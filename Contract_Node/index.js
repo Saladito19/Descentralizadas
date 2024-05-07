@@ -5,6 +5,7 @@ const path = require('path')
 const fs = require('fs')
 const nfts = require('./scripts/nfts');
 
+const salesRoutes = require('./routes/sales.js')
 const userRoutes = require('./routes/user.js')
 const bodyParser = require("body-parser")
 app.use(bodyParser.urlencoded({
@@ -12,6 +13,7 @@ app.use(bodyParser.urlencoded({
 }))
 app.use(bodyParser.json())
 app.use('/api',userRoutes)
+app.use('/api',salesRoutes)
 
 app.use(express.static(path.join(__dirname,'public')))
 const upload = multer({dest:'uploads/'})
